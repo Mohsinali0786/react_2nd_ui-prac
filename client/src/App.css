@@ -201,6 +201,10 @@ margin-top: 5%;
   border-radius: 100px;
 
 }
+.work-with-rocket-div{
+  /* max-height: 100% !important; */
+  min-height: 100%;
+}
 .cards-2nd-row-cards-parent-div{
   display: flex;
   align-items: center;
@@ -208,7 +212,7 @@ margin-top: 5%;
 }
 .cards-2nd-row-cards-div{
   background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
-  padding: 15%;
+  padding: 8%;
   border-radius: 10px;
 }
 .cards-2nd-row-cards-icon{
@@ -217,9 +221,9 @@ margin-top: 5%;
 }
 .cards-2nd-row-cards-Grid{
   background-color: white;
-  margin-top: 3% !important;
+  /* margin-top: 3% !important; */
   /* margin-left: 1% !important; */
-  padding:1% !important;
+  padding:3% !important;
   border-radius: 10px !important;
 }
 .cards-2nd-row-cards-parent-div p:nth-child(1){
@@ -239,9 +243,10 @@ margin-top: 5%;
   font-weight: 700;
 }
 .cards-2nd-row-2nd-maindiv{
-  background: linear-gradient(310deg, rgba(20, 23, 39, 0.8), rgba(58, 65, 111, 0.8)) 0% 0% / cover, url('https://demos.creative-tim.com/soft-ui-dashboard-react/static/media/ivancik.442b474727c414bb3b85.jpg') transparent;
-  height: 100%;
-  padding: 5%;
+  background: linear-gradient(310deg, rgba(20, 23, 39, 0.8), rgba(58, 65, 111, 0.8)) 0% 0% / cover, url('https://demos.creative-tim.com/soft-ui-dashboard-react/static/media/ivancik.442b474727c414bb3b85.jpg') ;
+  padding: 5%;;
+  border-radius: 10px
+  /* height: 37vh; */
 }
 .cards-2nd-row-2nd-maindiv h5 {
   color: white;
@@ -271,25 +276,80 @@ margin-top: 5%;
 }
 .cards-chart-div{
   background: linear-gradient(310deg, rgb(20, 23, 39), rgb(58, 65, 111));
-  height: 50vh;
+  height: 40vh;
   border-radius: 10px;
+  margin:2%;
+}
+.cards-areachart-div{
+  height: 80vh;
+}
+.cards-areachart-div div{
+  display: flex;
+}
+.cards-areachart-div div svg{
+  color: rgb(130, 214, 22);
+  font-size: 18px;
+}
+.cards-chartdiv-text{
+  margin:2%;
 }
 .cards-chartdiv-text h5{
   color: rgb(52, 71, 103);
   font-weight: 500;
   font-size: 1rem;
+
 }
 .cards-chartdiv-text p{
   font-size: 0.875;
   color: rgb(52, 71, 103);  
 }
+.cards-chart-numeric{
+  font-size: 1.5rem;
+  color: rgb(52, 71, 103);  
+  font-weight: 700;
+
+}
 .card-chartdiv-icons1color{
   background:linear-gradient(310deg, rgb(121, 40, 202), rgb(255, 0, 128));
   color: white;
-
+  height: 18px;
+  width: 20px;
+  border-radius: 3px;
+}
+.card-chartdiv-icons2color{
+  background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+  color: white;
+  height: 18px;
+  width: 20px;
+  border-radius: 3px;
+}
+.card-chartdiv-icons3color{
+  background: linear-gradient(310deg, rgb(245, 57, 57), rgb(251, 207, 51));
+  color: white;
+  height: 18px;
+  width: 20px;
+  border-radius: 3px;
+}
+.card-chartdiv-icons4color{
+  background: linear-gradient(310deg, rgb(234, 6, 6), rgb(255, 102, 124));
+  color: white;
+  height: 18px;
+  width: 20px;
+  border-radius: 3px;
+}
+.card-chartdiv-icons1color svg,
+.card-chartdiv-icons2color svg,
+.card-chartdiv-icons3color svg,
+.card-chartdiv-icons4color svg{
+  padding: 5%;
+    margin: 7%;
+    font-size: 15px;
 }
 .cards-chart--div-icons{
   display: flex;
+}
+.cards-chart--div-icons p{
+  margin-left: 4%;
 }
 /* SideBar Media Query */
   @media only screen and (max-width: 1150px) {
