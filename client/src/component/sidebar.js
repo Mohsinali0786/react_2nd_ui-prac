@@ -21,6 +21,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import SettingsIcon from '@mui/icons-material/Settings';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Cards from './cards';
+import Table from './table/tablescr'
 import { display } from '@mui/system';
 const { Sider, Header } = Layout;
 
@@ -164,6 +165,7 @@ const SideBar = () => {
         </div>
         {/* <div> */}
           <Cards/>
+          <Table/>
         {/* </div> */}
       </div>
     </div>

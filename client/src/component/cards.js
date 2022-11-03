@@ -102,7 +102,7 @@ function Cards() {
                 </Grid>
             </Grid>
             <Grid container spacing={2} sx={{ marginTop: '10px' }}>
-                <Grid item xs={12} md={4} >
+                <Grid item xs={12} md={5} >
                     <Grid className='cards-2nd-row-cards-Grid'>
                         <div className='cards-chart-div'>
                             <Chart />
@@ -111,7 +111,7 @@ function Cards() {
                             <h5>Active Users</h5>
                             <p><strong>(+23%)</strong> than last week</p>
                         </div>
-                        <Grid container spacing={1} sx={{marginLeft:'2%',marginRight:'2%' }}>
+                        <Grid container spacing={1} sx={{ marginLeft: '2%', marginRight: '2%' }}>
                             <Grid item xs={6} md={3}>
                                 <div className='cards-chart--div-icons'>
                                     <div className='card-chartdiv-icons1color' >
@@ -179,20 +179,21 @@ function Cards() {
 
                     </Grid>
                 </Grid>
-                <Grid item xs={12} md={8}>
+                <Grid item xs={12} md={7}>
                     <Grid className='cards-2nd-row-cards-Grid'>
                         <div className='cards-areachart-div'>
                             <h4>Sales Overview</h4>
                             <div>
-                                <ArrowUpwardIcon/>
+                                <ArrowUpwardIcon />
                                 <p>4% more in 2021</p>
                             </div>
-                            <AreaChart />
+                            <div className='cards-areaChart-div2'>
+                                <AreaChart />
+                            </div>
                         </div>
                     </Grid>
                 </Grid>
             </Grid>
-            {/* </Box> */}
         </div >
 
 
