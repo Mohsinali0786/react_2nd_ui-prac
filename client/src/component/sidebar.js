@@ -11,6 +11,7 @@ import { Divider } from '@mui/material';
 import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 import PersonPinOutlinedIcon from '@mui/icons-material/PersonPinOutlined';
 import RocketLaunchOutlinedIcon from '@mui/icons-material/RocketLaunchOutlined';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import StarIcon from '@mui/icons-material/Star';
 import { Layout, Menu } from 'antd';
 import React, { useEffect, useState } from 'react';
@@ -22,6 +23,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import Cards from './cards';
 import Table from './table/tablescr'
+import { Link } from 'react-router-dom';
 import { display } from '@mui/system';
 const { Sider, Header } = Layout;
 
@@ -77,6 +79,11 @@ const SideBar = () => {
       key: '8',
       icon: <RocketLaunchOutlinedIcon className='sidebar-icons' />,
       label: 'Signup',
+    },
+    {
+      key: '9',
+      icon: <MusicNoteIcon className='sidebar-icons' />,
+      label: 'Musics',
     },
   ]
   function reportWindowSize() {
@@ -175,7 +182,7 @@ const SideBar = () => {
                     <div >{v.icon}</div>
                     {
                       !collapsed ?
-                        <div>{v.label}</div>
+                        <div><Link to='/music'>{v.label}</Link></div>
                         :
                         ""
                     }

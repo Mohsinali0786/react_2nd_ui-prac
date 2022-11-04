@@ -1,5 +1,5 @@
-// const LOGIN='/'
 const HOME='/'
+const MUSIC='/music'
 // const USERSIGNUP='/signupform'
 // const ADMINPAGE='/adminPage'
 // const STUDENT='/student'
@@ -8,8 +8,8 @@ const HOME='/'
 // const USERPROFILE='/userprofile'
 
 export default{
-    // LOGIN,
     HOME,
+    MUSIC,
     // USERSIGNUP,
     // ADMINPAGE,
     // STUDENT,
