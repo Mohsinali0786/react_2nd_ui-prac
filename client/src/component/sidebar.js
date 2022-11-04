@@ -30,15 +30,60 @@ const SideBar = () => {
 
   const { Search } = Input;
   const onSearch = (value) => console.log(value);
-  useEffect(()=>{
-    window.addEventListener('resize',reportWindowSize);    
-  },[])
+  useEffect(() => {
+    window.addEventListener('resize', reportWindowSize);
+  }, [])
 
+  const myitems = [
+    {
+      key: '1',
+      icon: <StoreMallDirectory className='sidebar-icons' />,
+      label: 'DashBoard',
+    },
+    {
+      key: '2',
+      icon: <TableRowsIcon className='sidebar-icons' />,
+      label: 'Tables',
+    },
+    {
+      key: '3',
+      icon: <MoneyIcon className='sidebar-icons' />,
+      label: 'Billing',
+    },
+    {
+      key: '4',
+      icon: <ViewInArIcon className='sidebar-icons' />,
+      label: 'Virtual Reality',
+    },
+    {
+      key: '5',
+      icon: <ViewInArIcon className='sidebar-icons' />,
+      label: 'RTL',
+    },
+  ]
+  const items2 = [
+    {
+      key: '6',
+      icon: <PersonPinOutlinedIcon className='sidebar-icons' />,
+      label: 'Profile',
+    },
+    {
+      key: '7',
+      icon: <ContentCopyOutlinedIcon className='sidebar-icons' />
+      ,
+      label: 'Signin',
+    },
+    {
+      key: '8',
+      icon: <RocketLaunchOutlinedIcon className='sidebar-icons' />,
+      label: 'Signup',
+    },
+  ]
   function reportWindowSize() {
-    if( window.innerWidth < 1000){
-        setCollapsed(true)
+    if (window.innerWidth < 1000) {
+      setCollapsed(true)
     }
-    else{
+    else {
       setCollapsed(false)
 
     }
@@ -62,63 +107,106 @@ const SideBar = () => {
           theme="dark"
           mode="inline"
           defaultSelectedKeys={['1']}
-          items={[
-            {
-              key: '1',
-              icon: <StoreMallDirectory className='sidebar-icons' />,
-              label: 'DashBoard',
-            },
-            {
-              key: '2',
-              icon: <TableRowsIcon className='sidebar-icons' />,
-              label: 'Tables',
-            },
-            {
-              key: '3',
-              icon: <MoneyIcon className='sidebar-icons' />,
-              label: 'Billing',
-            },
-            {
-              key: '4',
-              icon: <ViewInArIcon className='sidebar-icons' />,
-              label: 'Virtual Reality',
-            },
-            {
-              key: '5',
-              icon: <ViewInArIcon className='sidebar-icons' />,
-              label: 'RTL',
-            },
-          ]}
-        />
-        <Divider />
-        {
-          !collapsed ?
-            <h5 classNam e='sidebar-accountpages-heading'>Account Pages</h5>
-            :
-            ""
-        }
+        // items={[
+        //   {
+        //     key: '1',
+        //     icon: <StoreMallDirectory className='sidebar-icons' />,
+        //     label: 'DashBoard',
+        //   },
+        //   {
+        //     key: '2',
+        //     icon: <TableRowsIcon className='sidebar-icons' />,
+        //     label: 'Tables',
+        //   },
+        //   {
+        //     key: '3',
+        //     icon: <MoneyIcon className='sidebar-icons' />,
+        //     label: 'Billing',
+        //   },
+        //   {
+        //     key: '4',
+        //     icon: <ViewInArIcon className='sidebar-icons' />,
+        //     label: 'Virtual Reality',
+        //   },
+        //   {
+        //     key: '5',
+        //     icon: <ViewInArIcon className='sidebar-icons' />,
+        //     label: 'RTL',
+        //   },
+        // ]}
+        >
+          {
+            myitems.map((v) => {
+              return (
+                <Menu.Item>
+                  <div className='slidebar-item-div'>
+                    <div>{v.icon}</div>
+                    {
+                      !collapsed ?
+                        <div>{v.label}</div>
+                        :
+                        ""
+                    }
+                  </div>
+                </Menu.Item>
+              )
+            })
+          }
+          {
+            !collapsed ?
+              <div style={{ marginBottom: '20px' }}>
+                <Divider />
+              </div>
+              :
+              ""
+          }
+
+          {
+            !collapsed ?
+              <h5 classNam e='sidebar-accountpages-heading'>Account Pages</h5>
+              :
+              ""
+          }
+          {
+            items2.map((v) => {
+              return (
+                <Menu.Item>
+                  <div className='slidebar-item-div' >
+                    <div >{v.icon}</div>
+                    {
+                      !collapsed ?
+                        <div>{v.label}</div>
+                        :
+                        ""
+                    }
+                  </div>
+                </Menu.Item>
+              )
+            })
+          }
+        </Menu>
         <Menu
           theme="dark"
           mode="inline"
-          // defaultSelectedKeys={['1']}
-          items={[
-            {
-              key: '6',
-              icon: <PersonPinOutlinedIcon className='sidebar-icons' />,
-              label: 'Profile',
-            },
-            {
-              key: '7',
-              icon: <ContentCopyOutlinedIcon className='sidebar-icons' />
-              ,
-              label: 'Signin',
-            },
-            {
-              key: '8',
-              icon: <RocketLaunchOutlinedIcon className='sidebar-icons' />,
-              label: 'Signup',
-            },
-          ]}
+        // defaultSelectedKeys={['1']}
+        // items={[
+        //   {
+        //     key: '6',
+        //     icon: <PersonPinOutlinedIcon className='sidebar-icons' />,
+        //     label: 'Profile',
+        //   },
+        //   {
+        //     key: '7',
+        //     icon: <ContentCopyOutlinedIcon className='sidebar-icons' />
+        //     ,
+        //     label: 'Signin',
+        //   },
+        //   {
+        //     key: '8',
+        //     icon: <RocketLaunchOutlinedIcon className='sidebar-icons' />,
+        //     label: 'Signup',
+        //   },
+        // ]}
         />
         {
           !collapsed ?
@@ -178,11 +266,11 @@ const SideBar = () => {
           </div>
         </div>
         {/* <div> */}
-          <Cards/>
-          <Table/>
+        <Cards />
+        <Table />
         {/* </div> */}
       </div>
-    </div>
+    </div >
 
   );
 };

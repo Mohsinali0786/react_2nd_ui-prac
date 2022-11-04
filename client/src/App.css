@@ -30,6 +30,13 @@ body{
 .ant-menu-dark li{
   color: black !important;
 }
+.slidebar-item-div{
+  display: flex;
+  align-items: center;
+}
+.slidebar-item-div div:nth-child(1){
+  display: flex;
+}
 .sidebar-heading{
   /* padding:5%; */
 }
