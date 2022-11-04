@@ -71,9 +71,9 @@ function Cards() {
             {/* <Box sx={{ width: '100%' }}> */}
             <Grid container spacing={2} sx={{ marginTop: '10px' }}>
                 <Grid item xs={12} md={7} >
-                    <Grid className='cards-2nd-row-cards-Grid'>
-                        <div className='cards-2nd-row-cards-parent-div'>
-                            <div>
+                    {/* <Grid className='cards-2nd-row-cards-Grid'> */}
+                        <div className='cards-2nd-row-cards-parent-div cards-2nd-row-cards-Grid'>
+                            <div className='cards-2nd-row-child1-div'>
                                 <p>Built by Developers</p>
                                 <h5>Soft UI Dashboard</h5>
                                 <p>From colors, cards, typography to complex elements, you will find the full documentation.</p>
@@ -86,7 +86,7 @@ function Cards() {
                                 <RocketIcon className='cards-2nd-row-cards-icon' />
                             </div>
                         </div>
-                    </Grid>
+                    {/* </Grid> */}
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <Grid className='cards-2nd-row-cards-Grid work-with-rocket-div'>

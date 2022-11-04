@@ -28,7 +28,6 @@ function TableScreen() {
                 <Grid item xs={12} sm={4} >
                     <Grid xs={12} className='cards-2nd-row-cards-Grid'>
                         <OrderOverView />
-
                     </Grid>
 
                 </Grid>

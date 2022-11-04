@@ -114,6 +114,7 @@ margin-top: 5%;
 .home-main-div{
   margin: 2%;
   display: flex;
+  padding-bottom: 2%;
 }
 .home-section-div{
   display: flex;
@@ -163,7 +164,7 @@ margin-top: 5%;
 .cards-main-div{
   padding-left: 2%;
   padding-top: 2%;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
 }
 .cards-info-cards{
   background-color: white;
@@ -259,8 +260,12 @@ margin-top: 5%;
   font-size: 1rem;
   font-weight: 400;
 }
+.cards-2nd-row-child1-div{
+  margin-bottom: 5%;
+}
 .cards-read-more-link{
   display: flex;
+  /* padding-bottom: 10%; */
 }
 .cards-read-more-link *{
   color: white;
@@ -283,14 +288,14 @@ margin-top: 5%;
   width: 100%;
 }
 .cards-areachart-div{
-  /* margin-bottom: 2%; */
-  padding-bottom: 1%;
+  /* margin-bottom: 5%; */
+  /* padding-bottom: 1%; */
 }
 .cards-areachart-div div{
   display: flex;
 }
 .cards-areaChart-div2{
-  margin-bottom: 5%;
+  margin-bottom: 9%;
   max-height: 100vh;
 }
 .cards-areaChart-div2 div{
