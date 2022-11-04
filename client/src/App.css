@@ -163,6 +163,7 @@ margin-top: 5%;
 .cards-main-div{
   padding-left: 2%;
   padding-top: 2%;
+  margin-bottom: 5%;
 }
 .cards-info-cards{
   background-color: white;
@@ -282,10 +283,15 @@ margin-top: 5%;
   width: 100%;
 }
 .cards-areachart-div{
-  height: 55vh;
+  /* margin-bottom: 2%; */
+  padding-bottom: 1%;
 }
 .cards-areachart-div div{
   display: flex;
+}
+.cards-areaChart-div2{
+  margin-bottom: 5%;
+  max-height: 100vh;
 }
 .cards-areaChart-div2 div{
   width: 100%;
@@ -367,6 +373,33 @@ margin-top: 5%;
 .css-11xur9t-MuiPaper-root-MuiTableContainer-root{
   height: 60vh;
 }
+.table-thead-font{
+  width: 100px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+}
+.table-tbody-font{
+  font-size: 10px !important;
+  font-weight: bold !important;
+}
+
+/* Table Screen */
+.tabScreen-checkicon-text{
+  display: flex;
+}
+.tabScreen-project-heading,.tabScreen-OrdersOverview-heading{
+  font-size: medium;
+}
+.tabScreen-checkicon-text h5{
+  font-size: x-large;
+}
+.tabScreen-checkicon-text  svg{
+  color: rgb(113, 206, 236) !important;
+  font-size: large !important;
+}
+.tabScreen-checkicon-text span:nth-child(2){
+  font-size: larger;
+}
 
 /* OverView Component CSS */
 
@@ -386,6 +419,7 @@ margin-top: 5%;
 
 .Overview-iconwithdivider-div{
   display: flex;
+  margin-top: 5%;
 }
 .Overview-iconwithdivider-div div:nth-child(2){
   margin-left: 10%;

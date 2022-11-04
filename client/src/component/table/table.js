@@ -81,14 +81,19 @@ const rows = [
 ];
 export default function BasicTable() {
     return (
-        <TableContainer component={Paper} >
-            <Table sx={{ minWidth: 0 ,height:'100px' }} aria-label="simple table">
+        <TableContainer component={Paper}   sx={{
+            height: 350,
+            "&::-webkit-scrollbar": {
+                width: 20
+              },  
+          }} >
+            <Table sx={{ minWidth: 0 ,height:"min-content",width:"max-content",overflow:'hidden' }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell style={{width: '100px'}} align="center">COMPANIES</TableCell>
-                        <TableCell style={{width: '100px'}} align="center" >MEMBERS</TableCell>
-                        <TableCell style={{width: '100px'}} align="center">BUDGET</TableCell>
-                        <TableCell style={{width: '100px'}} align="center">COMPLETION</TableCell>
+                        <TableCell className='table-thead-font'  align="center" >MEMBERS</TableCell>
+                        <TableCell className='table-thead-font'  align="center">COMPANIES</TableCell>
+                        <TableCell className='table-thead-font'  align="center">BUDGET</TableCell>
+                        <TableCell className='table-thead-font'  align="center">COMPLETION</TableCell>
                         {/* <TableCell align="right">Protein&nbsp;(g)</TableCell> */}
                     </TableRow>
                 </TableHead>
@@ -101,13 +106,13 @@ export default function BasicTable() {
                                 key={row.name}
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >
-                                <TableCell style={{width: '100px'}} component="th" scope="row" align="center">
-                                    <div style={{ display: 'flex' }}>
+                                <TableCell className='table-tbody-font'  component="th" scope="row" align="center">
+                                    <div style={{ display: 'flex',alignItems:'center' }}>
                                         <p>{row.icon}</p>
                                         <p>{row.name}</p>
                                     </div>
                                 </TableCell>
-                                <TableCell align="center" style={{width: '100px'}}>
+                                <TableCell align="center" className='table-tbody-font' >
                                     <AvatarGroup max={4}>
                                         {
                                             mem?.map((v) => {
@@ -118,8 +123,8 @@ export default function BasicTable() {
                                         }
                                     </AvatarGroup>
                                 </TableCell>
-                                <TableCell style={{width: '100px'}} align="center">{row.budget}</TableCell>
-                                <TableCell style={{width: '100px'}} align="center">
+                                <TableCell className='table-tbody-font' align="center">{row.budget}</TableCell>
+                                <TableCell className='table-tbody-font' align="center">
                                     <p className="table-progressbar">{row.progressbar}</p>
                                 </TableCell>
                             </TableRow>

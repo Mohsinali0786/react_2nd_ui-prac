@@ -13,7 +13,7 @@ import PersonPinOutlinedIcon from '@mui/icons-material/PersonPinOutlined';
 import RocketLaunchOutlinedIcon from '@mui/icons-material/RocketLaunchOutlined';
 import StarIcon from '@mui/icons-material/Star';
 import { Layout, Menu } from 'antd';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Breadcrumb } from 'antd';
 import HomeIcon from '@mui/icons-material/Home';
 import { Input, Space } from 'antd';
@@ -30,9 +30,23 @@ const SideBar = () => {
 
   const { Search } = Input;
   const onSearch = (value) => console.log(value);
+  useEffect(()=>{
+    window.addEventListener('resize',reportWindowSize);    
+  },[])
+
+  function reportWindowSize() {
+    if( window.innerWidth < 1000){
+        setCollapsed(true)
+    }
+    else{
+      setCollapsed(false)
+
+    }
+  }
   return (
 
     <div className='home-main-div' >
+
       <Sider trigger={null} collapsible collapsed={collapsed} style={collapsed ? { overflow: 'hidden' } : { overflow: 'scroll' }} >
         {
           !collapsed ?

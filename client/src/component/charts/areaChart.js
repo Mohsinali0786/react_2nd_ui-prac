@@ -26,7 +26,7 @@ const DemoArea = () => {
     },
   };
 
-  return <Area {...config} style={{height:'60vh'}}/>;
+  return <Area {...config} />;
 };
 
 

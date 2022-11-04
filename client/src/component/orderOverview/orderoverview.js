@@ -9,7 +9,7 @@ import { Divider } from '@mui/material';
 function OrderOverView() {
     return (
         <div>
-            <p>Orders overview</p>
+            <h5 className='tabScreen-OrdersOverview-heading'>Orders overview</h5>
             <div className='Overview-percentage-div'>
                 <ArrowUpwardIcon />
                 <p>24% this month</p>
