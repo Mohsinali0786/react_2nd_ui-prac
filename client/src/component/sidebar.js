@@ -25,6 +25,8 @@ import Cards from './cards';
 import Table from './table/tablescr'
 import { Link } from 'react-router-dom';
 import { display } from '@mui/system';
+import setcollapsed from '../store/actions/index.js'
+import { useSelector,useDispatch } from 'react-redux';
 const { Sider, Header } = Layout;
 
 const SideBar = () => {
@@ -84,6 +86,7 @@ const SideBar = () => {
       key: '9',
       icon: <MusicNoteIcon className='sidebar-icons' />,
       label: 'Musics',
+      path:'/audio'
     },
   ]
   function reportWindowSize() {
@@ -182,7 +185,7 @@ const SideBar = () => {
                     <div >{v.icon}</div>
                     {
                       !collapsed ?
-                        <div><Link to='/music'>{v.label}</Link></div>
+                        <div><Link to={v.path}>{v.label}</Link></div>
                         :
                         ""
                     }

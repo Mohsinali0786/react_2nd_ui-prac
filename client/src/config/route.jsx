@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import {Home,Music} from '../screen'
+import {Home,Audio} from '../screen'
 import allPaths from './path'
 
 
@@ -10,7 +10,7 @@ function AppRouter() {
 
                 {/* <Route path={allPaths?.LOGIN} element={<SigninScreen/>} /> */}
                 <Route path={allPaths?.HOME} element={<Home/>} />
-                <Route path={allPaths?.MUSIC} element={<Music/>} />
+                <Route path={allPaths?.AUDIO} element={<Audio/>} />
                 {/* <Route path={allPaths?.COMPANYSIGNUP} element={<CompanySignup/>} />
                 <Route path={allPaths?.ADMINPAGE} element={<Admin/>} />
                 <Route path={allPaths?.STUDENT} element={<Students/>} />

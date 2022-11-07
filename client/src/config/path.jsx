@@ -1,5 +1,5 @@
 const HOME='/'
-const MUSIC='/music'
+const AUDIO='/audio'
 // const USERSIGNUP='/signupform'
 // const ADMINPAGE='/adminPage'
 // const STUDENT='/student'
@@ -9,7 +9,7 @@ const MUSIC='/music'
 
 export default{
     HOME,
-    MUSIC,
+    AUDIO,
     // USERSIGNUP,
     // ADMINPAGE,
     // STUDENT,

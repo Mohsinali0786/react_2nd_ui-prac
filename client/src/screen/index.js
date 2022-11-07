@@ -1,13 +1,9 @@
 import Home from './home'
-import Music from './musics'
-const musics=[
-    {
-        music:
-    }
-]
+import Audio from './audio'
+
 
 
 export {
     Home,
-    Music
+    Audio
 }
