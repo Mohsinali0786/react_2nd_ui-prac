@@ -151,6 +151,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-right: 3%;
+  margin-top: 2%;
 }
 
 .content-main-div {
@@ -612,7 +613,12 @@ audio::-webkit-media-controls-toggle-closed-captions-button{
   height: 25vmax;
 }
 .audioList-maindiv{
-  margin: 5%;
+  margin-top: 10%;
+  /* padding:5% */
+}
+.audioList-maindiv > p{
+  text-align: right;
+  margin-right: 2%;
 }
 .audioList{
   padding: 1%;

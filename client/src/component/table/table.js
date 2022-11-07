@@ -15,6 +15,7 @@ import { Avatar, AvatarGroup, LinearProgress } from '@mui/material';
 
 
 
+
 const rows = [
 
     {
@@ -100,7 +101,7 @@ export default function BasicTable() {
                 <TableBody>
                     {rows.map((row) => {
                         let mem = row.members
-                        console.log('rows.mem', mem)
+                        // console.log('rows.mem', mem)
                         return (
                             <TableRow
                                 key={row.name}

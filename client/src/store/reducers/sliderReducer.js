@@ -5,6 +5,7 @@ const initialState = {
 }
 
 const sliderReducer = (state = initialState, action) => {
+    console.log('Reducer',action.payload)
     switch (action.type) {
 
         case SETSIDEMENU:
