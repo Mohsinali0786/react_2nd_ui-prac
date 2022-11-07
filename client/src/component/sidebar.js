@@ -65,7 +65,7 @@ const SideBar = () => {
     {
       key: '9',
       icon: <MusicNoteIcon className='sidebar-icons' />,
-      label: 'Musics',
+      label: 'Audio',
       path:'/audio'
     },
   ]
