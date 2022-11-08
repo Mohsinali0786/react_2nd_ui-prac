@@ -6,6 +6,7 @@ import { Divider } from '@mui/material';
 import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 import PersonPinOutlinedIcon from '@mui/icons-material/PersonPinOutlined';
 import RocketLaunchOutlinedIcon from '@mui/icons-material/RocketLaunchOutlined';
+import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import StarIcon from '@mui/icons-material/Star';
 import { Layout, Menu } from 'antd';
@@ -67,6 +68,12 @@ const SideBar = () => {
       icon: <MusicNoteIcon className='sidebar-icons' />,
       label: 'Audio',
       path:'/audio'
+    },
+    {
+      key: '10',
+      icon: <SmartDisplayIcon className='sidebar-icons' />,
+      label: 'Video',
+      path:'/videos'
     },
   ]
 

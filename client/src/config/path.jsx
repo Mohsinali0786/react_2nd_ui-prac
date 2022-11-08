@@ -1,5 +1,9 @@
 const HOME='/'
 const AUDIO='/audio'
+const VIDEO='/videos'
+const INDIVIDUALVIDEO='/myvideos/:name'
+
+
 // const USERSIGNUP='/signupform'
 // const ADMINPAGE='/adminPage'
 // const STUDENT='/student'
@@ -10,6 +14,8 @@ const AUDIO='/audio'
 export default{
     HOME,
     AUDIO,
+    VIDEO,
+    INDIVIDUALVIDEO
     // USERSIGNUP,
     // ADMINPAGE,
     // STUDENT,

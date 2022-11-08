@@ -618,10 +618,10 @@ audio::-webkit-media-controls-toggle-closed-captions-button{
 }
 .audioList-maindiv > p{
   text-align: right;
-  margin-right: 2%;
+  margin-right: 5%;
 }
 .audioList{
-  padding: 1%;
+  /* padding: 1%; */
 
 }
 .audioList span:nth-child(2){
@@ -634,7 +634,42 @@ audio::-webkit-media-controls-toggle-closed-captions-button{
   cursor: pointer;
   border-radius: 5px;
 }
+.selectedaudioList{
+  background-color: gray;
+  border-radius: 5px;
+  padding: 1%;
+  color: white;
+}
+.audioList{
+  display: flex;
+}
+.audioList > p{
+  /* flex-direction: row; */
+  width: 70%;
+}
+.selected{
+
+}
+
+.not_selected{
+  visibility:hidden;
+}
+
+/* individual Videos Screen */
+
+.ind_videos_btns{
+  display: flex;
+  align-items:center;
+  gap: 5px;
+}
+.ind_videos_btns-Div{
+  
+}
+
+
 /* /////////////////// */
+
+
 
 
 /* audio::-webkit-media-controls-enclosure {
