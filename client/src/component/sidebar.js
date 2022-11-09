@@ -82,8 +82,8 @@ const SideBar = () => {
   console.log('state outside',state)
   return (
 
-    <div className='home-main-div' >
-      <Sider trigger={null} collapsible collapsed={state} style={state ? { overflow: 'hidden' } : { overflow: 'scroll' }} >
+    <div className={state?'home-main-div':'home-main-div-sidemenuclosed'} >
+      <Sider className='mysidebar' trigger={null} collapsible collapsed={state} style={state ? { overflow: 'hidden' } : { overflow: 'scroll' }} >
         {
           !state ?
             <>
