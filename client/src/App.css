@@ -142,8 +142,9 @@ body {
   position: fixed !important;
   z-index: 1 !important;
   top:0px !important;
-  overflow: hidden !important;
+  overflow: scroll !important;
 }
+
 /* Home CSS in SideBar Component */
 /* All home component are in sidebar component */
 .home-main-div {
@@ -769,9 +770,12 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
 
 #videos-home::-webkit-media-controls-current-time-display,video::-webkit-media-controls-time-remaining-display {
   display: none;
-
+  
 }
 
+.videocard-video{
+  width: 95% !important;
+}
 
 
 /* SideBar Media Query */
@@ -802,13 +806,26 @@ audio::-webkit-media-controls-toggle-closed-captions-button {}
 
   }
 }
-@media only screen and (max-width: 700px) {
-  /* .card-section-Grid{
-    margin-left: 2% !important;
-    width:470% !important;
+@media only screen and (max-width: 900px) {
+  .card-section-Grid{
+    /* padding-left: 2% !important; */
+    /* width:470% !important; */
   }
-  .videocard-video{
-    width: 70% !important;
-  } */
+  .videocardscreen-div{
+    padding-left:4%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card-section-Grid{
+    /* padding-left: 2% !important; */
+    /* width:470% !important; */
+  }
+  .videocardscreen-div{
+    margin-left: 5%;
+    padding:0% 5%;
+  }
+  .videocards-Grid{
+    margin-left: 1% !important; 
+  }
 }
 

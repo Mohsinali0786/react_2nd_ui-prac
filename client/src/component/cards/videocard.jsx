@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function VideoCards(props){
     const {type}=props
     return(
-        <Grid container spacing={1}>
+        <Grid container spacing={1} className='videocards-Grid'>
         {
             AllVideos.map((v) => {
                 console.log('v==>',v)

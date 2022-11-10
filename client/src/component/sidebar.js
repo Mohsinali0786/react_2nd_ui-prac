@@ -84,7 +84,7 @@ const SideBar = () => {
 
     <div className={state?'home-main-div':'home-main-div-sidemenuclosed'} >
       <Sider className='mysidebar' trigger={null} collapsible collapsed={state} style={state ? { overflow: 'hidden' } : { overflow: 'scroll' }} >
-        {
+        { 
           !state ?
             <>
               <h4 className='sidebar-heading'>SOFT UI DashBoard</h4>
